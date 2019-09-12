@@ -1,0 +1,19 @@
+SQL>create table movie(moviename varchar2(50) primary key,releasedate Date,description varchar2(1000),file1 Blob,actorname varchar2(500) );
+
+SQL->desc movie;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ MOVIENAME                                 NOT NULL VARCHAR2(50)
+ RELEASEDATE                                        DATE
+ DESCRIPTION                                        VARCHAR2(1000)
+ FILE1                                              BLOB
+ ACTORNAME                                          VARCHAR2(500)
+ 
+SQL->create table actors(name varchar2(30) primary key,sex Varchar2(10),dob Date,bio varchar2(1000));
+SQL->desc actors;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ NAME                                      NOT NULL VARCHAR2(30)
+ SEX                                                VARCHAR2(10)
+ DOB                                                DATE
+ BIO                                                VARCHAR2(1000)
